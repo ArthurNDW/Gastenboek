@@ -3,7 +3,7 @@
 session_start();
 
 if (isset($_SESSION['message_sent']) && $_SESSION['message_sent'] === true) {
-  header("Location: index.php?status=alreadysent");
+  header("Location: gastenboek.php?status=alreadysent");
   exit();
 }
 
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   file_put_contents('jsondata.json', $json);
   $_SESSION['message_sent'] = true;
-  header("Location: index.php");
+  header("Location: gastenboek.php");
   // echo  '<pre>' . $json . "</pre>";
 }
 

@@ -5,6 +5,8 @@ $data = json_decode($jsonData, true);
 
 $htmlString = '';
 
+rsort($data);
+
 if ($data != null) {
 
     foreach ($data as $message) {

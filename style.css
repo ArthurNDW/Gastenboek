@@ -21,77 +21,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 320px) {
-  #logo {
-    max-width: 100px;
-    max-height: 100px;
-  }
-
-  .GB {
-    margin-left: 25%;
-  }
-
-  .TX {
-    margin-right: 20%;
-  }
-
-  .tx {
-    margin-right: 20%;
-  }
-
-  .Tx {
-    margin-left: 16%;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  #logo {
-    max-width: 100px;
-    max-height: 100px;
-  }
-
-  .GB {
-    margin-left: 25%;
-  }
-
-  .TX {
-   text-align: center;
-   margin-left: auto;
-  }
-
-  .tx {
-    margin-right: 20%;
-  }
-
-  .Tx {
-    margin-left: 16%;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  #logo {
-    max-width: 100px;
-    max-height: 100px;
-  }
-
-  .GB {
-    margin-left: 25%;
-  }
-
-  .TX {
-    margin-left: 16%;
-    margin-top: 21%;
-  }
-
-  .tx {
-    margin-right: 20%;
-  }
-
-  .Tx {
-    margin-left: 16%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   #logo {
     max-width: 100px;
@@ -103,18 +32,19 @@
   }
 
   .TX {
-    margin-left: 16%;
-    margin-top: 21%;
+    text-align: left;
   }
 
   .tx {
-    margin-right: 20%;
+    text-align: left;
   }
 
   .Tx {
-    margin-left: 16%;
+    margin-right: 60%;
   }
+
 }
+
 
 .Gastenboek {
   grid-area: Gastenboek;
@@ -215,12 +145,12 @@ body,
 
 
 .TX {
-  margin-left: 37%;
   margin-top: 8%;
+  text-align: center;
 }
 
 .tx {
-  margin-left: 18%;
+  text-align: center;
 }
 
 .Tx {

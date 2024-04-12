@@ -1,8 +1,3 @@
-<?php
-include 'getMessages.php';
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,43 +10,27 @@ include 'getMessages.php';
 
 <body>
 
-  <div class="container">
 
-    <div class="Gastenboek">
+  <div class="containerhomepage">
+
+    <div class="gastb">
+
       <H1 class="GB">Gastenboek</H1>
       <img id="logo" src="512x512bb.jpg" alt="ik" style="width:205px;height:205px;">
-      <a href="homepage.php">
-        <button>Terug naar Homepage</button>
+    </div>
+
+    <div class="text">
+      <H2 class="TX">Welkom op mijn Gastenboek</H2>
+      <p class="tx">Je kan hier per sessie een bericht met een afbeelding plaatsen.
+        Inloggen is niet nodig.
+        Klik op de knop hier beneden om een bericht te gaan schrijven.</p>
+
+      <a href="gastenboek.php">
+        <button class="Tx">Ga naar berichten</button>
       </a>
 
     </div>
-    <div class="messages-container">
-      <br>
-      <div class="messages">
-
-        <?php
-        echo $htmlString;
-        ?>
-
-      </div>
-      <br>
-
-    </div>
-
-    <div class="NBFV">
-
-      <form class="nb" action="post_information.php" method="post" enctype="multipart/form-data">
-        <input type="text" name="name" maxlength="50" required placeholder="Naam">
-        <br>
-        <input type="text" name="message" maxlength="500" required placeholder="Bericht                (Max:500)">
-        <br>
-        <input type="file" name="uploadedImage">
-        <br>
-        <input type="submit" value="Plaats Bericht" name="submit">
-        <br>
-      </form>
-
-    </div>
+    <div class="on"></div>
 
   </div>
 
@@ -59,9 +38,3 @@ include 'getMessages.php';
 </body>
 
 </html>
-
-<?php
-if (isset($_GET['status']) && $_GET['status'] === "alreadysent") {
-  echo "<script> alert('Maximaal aantal berichten bereikt voor deze sessie.'); </script>";
-}
-?>
